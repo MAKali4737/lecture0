@@ -1,24 +1,74 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+html {
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: rgba(0, 0, 0, 0.822)
+}
+
+
+
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+
+body {
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+  }
+
+
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color:rgb(255, 255, 255);
+    
+   
+}
+
 h1 {
-    color:rgb(150, 3, 125);
-    text-align:center;
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+
+
+
+  p {
+    color: rgb(255, 255, 255);
+    font-size:160%;
+    padding: 25px 50px;
 }
 
-p {
-    color: royalblue;
-}
 
-div {
-    background-color: teal;
-    width: 150px;
-    height: 50px;
-    margin: 30px;
-    padding: 20px;
-    font-family: sans-serif, Arial;
-    font-size: 24px;
-    font-weight: bold;
-    border: 3px solid blue;
-
-}
 
 table{
     border: 2px solid black;
@@ -36,3 +86,54 @@ th{
     background-color: rgb(187, 197, 199);
     
 }
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  }
+
+
+.welcome-section > p {
+    font-size: 3rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-red);
+  }
+  
+  
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        width: 100%;
+      }
+  
+  li {
+      font-size: x-large;
+    display: inline;
+   
+    float: left;
+   
+    
+  }
+  li a:hover {
+    background-color: rgb(131, 10, 10);
+  }
+
+
+  li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
